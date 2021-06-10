@@ -866,7 +866,7 @@ void utilGBAFindSave(const int size)
         if (detectedSaveType == 4) {
                 detectedSaveType = 3;
         }
-        rtcEnable(rtcFound);
+        rtcEnable(true);
         rtcEnableRumble(!rtcFound);
         saveType = detectedSaveType;
         flashSetSize(flashSize);
